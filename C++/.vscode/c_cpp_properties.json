@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}",
+                "/Users/kahlilbeasley/Desktop/dev_tools/vcpkg/packages/restinio_x64-osx/include",
+                "/Users/kahlilbeasley/Desktop/dev_tools/vcpkg/packages/asio_x64-osx/include",
+                "/Users/kahlilbeasley/Desktop/dev_tools/vcpkg/packages/fmt_x64-osx/include",
+                "/Users/kahlilbeasley/Desktop/dev_tools/vcpkg/packages/http-parser_x64-osx/include"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/opt/homebrew/bin/gcc-10",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "macos-gcc-arm64",
+            "compilerArgs": [],
+            "intelliSenseModeIsExplicit": true,
+            "cStandardIsExplicit": true,
+            "cppStandardIsExplicit": true,
+            "compilerPathIsExplicit": true,
+            "browse": {
+                "path": [
+                    "/Users/kahlilbeasley/Desktop/dev_tools/vcpkg/packages/**",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
