@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
+	db "github.com/ksbeasle/go-sample-web-app/pkg/database"
 )
 
 func main() {
@@ -24,6 +25,10 @@ func main() {
 		PORT = ":8080"
 	}
 
+	// Start DB
+	db.ConnectDb()
+
+	// ignore the error that routes() shows its within the same package (main) and works fine
 	serve := &http.Server{
 		Addr:    PORT,
 		Handler: routes(),

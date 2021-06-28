@@ -11,6 +11,7 @@ func routes() http.Handler {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/ping", HealthCheck)
+	router.HandleFunc("/", GetAll)
 
 	return router
 }
