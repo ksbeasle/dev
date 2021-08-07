@@ -12,7 +12,7 @@ class Display {
     displayAppName()  {
         this.log(
             chalk.yellow(
-                figlet.textSync("Joe's Parts", { horizontalLayout: 'full' })
+                figlet.textSync("Bahlil K333asley", { horizontalLayout: 'full' })
             )
         );
     }
