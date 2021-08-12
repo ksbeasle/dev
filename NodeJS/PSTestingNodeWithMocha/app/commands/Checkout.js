@@ -3,6 +3,7 @@ const display = require('../display.js');
 const order = require('../order.js');
 
 module.exports = function(rl, cart) {
+    // return;
     if(cart.lineItems.length === 0) {
         throw Error('Cannot Checkout With an Empty Cart')
     }
