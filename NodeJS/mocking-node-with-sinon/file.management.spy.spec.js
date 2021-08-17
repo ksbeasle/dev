@@ -4,20 +4,20 @@ const fs = require("fs");
 const proxyquire = require("proxyquire");
 const fileManagement = require("./file.management");
 
-describe("File Management", () => {
+describe.skip("File Management", () => {
 
   afterEach(() => {
     sinon.restore();
   })
-  
+
   describe("When creating a new file", () => {
     it("Should call writeFileSync", () => {
-      const writeSpy = sinon.spy(fs, "writeFileSync");
-      const fileManagement = proxyquire("./file.management", { fs });
-      fileManagement.createFile("test.txt");
+      // const writeSpy = sinon.spy(fs, "writeFileSync");
+      // const fileManagement = proxyquire("./file.management", { fs });
+      // fileManagement.createFile("test.txt");
 
       
-      expect(writeSpy.calledWith("./data/test.txt", "")).to.be.true;
+      // expect(writeSpy.calledWith("./data/test.txt", "")).to.be.true;
     });
 
     it("Should NOT create a file when no filename is given", () => {
