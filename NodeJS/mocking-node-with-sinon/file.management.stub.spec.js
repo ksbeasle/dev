@@ -4,7 +4,7 @@ const fs = require('fs');
 const proxyquire = require('proxyquire');
 
 
-describe('file management - stubs', () => {
+describe.skip('file management - stubs', () => {
 
     afterEach(() => {
         sinon.restore()
